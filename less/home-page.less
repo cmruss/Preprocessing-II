@@ -1,21 +1,54 @@
 .home {
 
+  header{
+    border-bottom: 2px dashed @navigation-border;
+
+    @media( @mobile){
+      width: 90%;
+      padding: 0 0;
+      margin : 0 auto;
+    }
+    .welcome{
+      padding: 2% 0;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media(@mobile){
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      padding: 0 0;
+      margin: 5% auto;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media( @mobile){
+        width: 90%;
+        padding: 0 0;
+        margin: 0 auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media( @mobile){
+        width: 90%;
+        padding: 0 0;
+        margin: 0 auto;
+      }
 
       img {
         border-radius: 10px;
@@ -27,14 +60,31 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media(@mobile){
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media( @mobile){
+        width: 90%;
+        padding: 0 0;
+        margin : 0 auto;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media( @mobile){
+        width: 90%;
+        padding: 0 0;
+        margin : 0 auto;
+      }
     }
   }
 
@@ -42,8 +92,16 @@
     width: 75%;
     margin: 0 auto 30px;
 
+
+    @media( @mobile){
+      width: 90%;
+      padding: 3% 0;
+      margin : 0 auto;
+    }
+
     img {
       border-radius: 10px;
+
     }
   }
 
@@ -53,9 +111,29 @@
     display: flex;
     justify-content: space-between;
 
+    @media(@mobile){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media( @mobile){
+        width: 80%;
+        padding: 3% 0;
+        margin : 2% auto;
+      }
+        .btn{
+          .button();
+          
+          @media( @mobile){
+            width:100%;
+          }
+        }
+      
     }
   }
-}// home
+}
