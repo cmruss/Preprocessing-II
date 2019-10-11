@@ -2,12 +2,18 @@
 
   header{
     border-bottom: 2px dashed @navigation-border;
-
+    
+    @media(@tablet){
+      width: 90%;
+      padding: 0 0;
+      margin : 0 auto;
+    }
     @media( @mobile){
       width: 90%;
       padding: 0 0;
       margin : 0 auto;
     }
+    
     .welcome{
       padding: 2% 0;
     }
@@ -19,6 +25,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media(@tablet){
+      width: 90%;
+      padding: 0 0;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-around;
+    }
     @media(@mobile){
       flex-direction: column;
       justify-content: center;
@@ -26,13 +39,16 @@
       padding: 0 0;
       margin: 5% auto;
     }
-
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
 
+      @media( @tablet){
+        width: 40%;
+        padding: 0 0;
+      }
       @media( @mobile){
         width: 90%;
         padding: 0 0;
@@ -43,6 +59,11 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media( @tablet){
+        width: 40%;
+        padding: 0 0;
+      }
 
       @media( @mobile){
         width: 90%;
@@ -60,26 +81,45 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media( @tablet){
+      width: 90%;
+      padding: 0 0;
+      margin: 0 auto;
+    }
+
     @media(@mobile){
+      width: 90%;
+      padding: 2% 0;
+      margin: 0 auto;
       flex-direction: column-reverse;
       justify-content: center;
     }
-
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media( @tablet){
+        width: 40%;
+        padding: 0 0;
+      }
 
       @media( @mobile){
         width: 90%;
         padding: 0 0;
         margin : 0 auto;
       }
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
 
+      @media( @tablet){
+        width: 40%;
+        padding: 0 0;
+      }
       @media( @mobile){
         width: 90%;
         padding: 0 0;
@@ -92,6 +132,11 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media( @tablet){
+      width: 90%;
+      padding: 0 0;
+      margin: 0 auto;
+    }
 
     @media( @mobile){
       width: 90%;
@@ -102,6 +147,10 @@
     img {
       border-radius: 10px;
 
+      @media (@tablet){
+        width:100%
+      }
+
     }
   }
 
@@ -110,6 +159,12 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media( @tablet){
+      width: 90%;
+      padding: 0 0;
+      margin: 3% auto;
+    }
 
     @media(@mobile){
       flex-direction: column;
